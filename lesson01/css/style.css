@@ -1,0 +1,5 @@
+body > div {
+            margin: 0.5em;
+            min-height: 10px;
+            min-width: 10px;
+            background-color: pink;
