@@ -1,17 +1,29 @@
+(function(){"use strict";
+
+const body = document.body;
+
 var listOfNumbers = [1, 3, 6, 13, 5, 9];
+var div;
 
-var body;
-var div ;
 
-// ------------------------
+// ------------------------							
 function makeDiv (divLength) {
-    body = document.body;
-    div = document.createElement("div");
+
+	div = document.createElement("div");
     div.style.width = divLength + "em";
-    body.appendChild(div);
+    body.appendChild(div); 
 }
 // ------------------------
 
-for (var i = 0; i <= listOfNumbers.length - 1; i++) {
+for (let i = 0; i < listOfNumbers.length; i++) {
     makeDiv(listOfNumbers[i]);
+    removeDiv();
 }
+
+
+
+ function removeDiv() {
+ 	body.removeChild(div)
+ }
+
+})();
